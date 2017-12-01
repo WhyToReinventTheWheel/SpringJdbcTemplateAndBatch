@@ -24,7 +24,7 @@ try {
 	Throwable rootCause = exp.getCause();
 	if(rootCause instanceof BatchUpdateException){
 		BatchUpdateException bue = (BatchUpdateException)rootCause;
-		** // BatchUpdateException helps to find out which job fail **
+		// BatchUpdateException helps to find out which job fail
 		int lastSuccessfullRow = bue.getUpdateCounts().length;   
 	}
 }
