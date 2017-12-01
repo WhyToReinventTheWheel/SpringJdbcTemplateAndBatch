@@ -1,7 +1,7 @@
 Spring JDBC Template Batch Update
   * H2 Database not giving BatchUpdateException exception, i used MQSQL
-  * 2way to process the batch , with and without transaction.
-  * @Transactional annotaion on method or class work fine, nothing else need to done.
+  * 2 ways to process the batch are  with or without transaction.
+  * @Transactional annotaion on method or class works fine, nothing else need to do.
   ```
 String sql = "insert into person (id, name) " + "values(?,  ?)";  
 try {
