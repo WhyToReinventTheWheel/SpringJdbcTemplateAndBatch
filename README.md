@@ -1,4 +1,5 @@
 Spring JDBC Template Batch Update
+  * https://spring.io/guides/gs/relational-data-access/
   * H2 Database not giving BatchUpdateException exception, i used MQSQL
   * 2 ways to process the batch are  with or without transaction.
   * @Transactional annotaion on method or class works fine, nothing else need to do.
