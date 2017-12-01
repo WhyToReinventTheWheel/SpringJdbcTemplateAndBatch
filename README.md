@@ -3,6 +3,7 @@ Spring JDBC Template Batch Update
   * 2way to process the batch , with and without transaction.
   * @Transactional annotaion on method or class work fine, nothing else need to done.
   ```
+String sql = "insert into person (id, name) " + "values(?,  ?)";  
 try {
 	resultArray = jdbcTemplate.batchUpdate(sql, new BatchPreparedStatementSetter() {
 		List<Person> list = new ArrayList<>();
